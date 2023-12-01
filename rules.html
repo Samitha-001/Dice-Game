@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background:violet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+    margin: 5px;
+    padding: 4px;
+    width: 550px;
+    height: 500px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    position: relative;
+    justify-content: center;
+}
+    .container > h1{
+        text-align: center;
+        color: tomato;
+    }
+    .container p{
+        color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rules of the dice game</h1>
+        <p>1. Two players can play the game, at one player at a time</p>
+        <p>2. Two dices have been got per each player</p>
+        <p>3. If both dice take the value of '1' player score will be set to '0'</p>
+        <p>4. If dices take different values the player who played that turn will pass to the other and button will be disabled and highlight it in red.</p>
+        <p>5. Score will be added according to the value of the top of the dices.</p>
+        <p>6. The winnner is considered as the player who takes the score 100 or more.</p>
+    </div>
+</body>
+</html>

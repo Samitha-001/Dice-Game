@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <label for="name1"><b>Player 1</b></label>
+            <input type="text" id="name1" class="names" placeholder="Enter the name" name="name1" required>
+      
+            <label for="name2"><b>Player 2</b></label>
+            <input type="text" id="name2" class="names"  placeholder="Enter the name" name="name2" required>
+            <span id="rule"><input type="checkbox" id="rules">
+            <label for="rules" style="font-size: medium;">Agree to the <a href="rules.html" target="_blank">rules</a> </label></span>
+            <button id="playBtn" type="submit">Play</button>
+          </div>
+        <div class="dices" style="display: none;">
+            <div class="dice1" id="d1P1"></div>
+            <div class="dice1" id="d2P1"></div>
+        </div>
+        <div class="player1 flex-items" style="display: none;">
+            <h1 class="player" id="pName1">Player 1</h1>
+            <h2 class="score">0</h2>
+            <input type="button" value="Roll" id="roll1" class="roll">
+        </div>
+        <div class="players"></div>
+        <div class="player2 flex-items" style="display: none;">
+            <h1 class="player" id="pName2">Player 2</h1>
+            <h2 class="score">0</h2>
+            <input type="button" value="Roll" id="roll2" class="roll">
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
